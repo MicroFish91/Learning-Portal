@@ -1,7 +1,9 @@
 import React from "react";
+import styled from "styled-components";
 import Footer from "../../components/Footer";
-import Header from "../../components/Header";
-import Sidebar from "../../components/Sidebar";
+import Header from "../../components/Headers/Main";
+import Sidebar from "../../components/Sidebars/Main";
+import { MAIN_DIMENSIONS } from "../../constants";
 
 interface MainLayoutProps {
   children?: React.ReactNode;
@@ -12,10 +14,21 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
     <>
       <Header />
       <Sidebar />
-      {children}
+      <Content>{children}</Content>
       <Footer />
     </>
   );
 };
 
 export default MainLayout;
+
+const { header, sidebar } = MAIN_DIMENSIONS;
+
+const Content = styled.div`
+  position: fixed;
+  top: ${header.height};
+  left: ${sidebar.width};
+
+  height: auto;
+  width: calc(100% - ${sidebar.width});
+`;
