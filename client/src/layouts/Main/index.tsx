@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Footer from "../../components/Footer";
 import Header from "../../components/Headers/Main";
 import Sidebar from "../../components/Sidebars/Main";
-import { MAIN_DIMENSIONS } from "../../constants";
+import { MAIN_LAYOUT_DIMENSIONS } from "../../constants";
 
 interface MainLayoutProps {
   children?: React.ReactNode;
@@ -22,7 +22,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
 
 export default MainLayout;
 
-const { header, sidebar } = MAIN_DIMENSIONS;
+const { header, sidebar } = MAIN_LAYOUT_DIMENSIONS;
 
 const Content = styled.div`
   position: fixed;

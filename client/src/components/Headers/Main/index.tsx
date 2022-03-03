@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { MAIN_DIMENSIONS } from "../../../constants";
+import { MAIN_LAYOUT_DIMENSIONS } from "../../../constants";
 
 interface headerProps {}
 
@@ -18,7 +18,7 @@ const MainHeader: React.FC<headerProps> = ({}) => {
 
 export default MainHeader;
 
-const { header } = MAIN_DIMENSIONS;
+const { header } = MAIN_LAYOUT_DIMENSIONS;
 
 const ButtonContainer = styled.div`
   button {

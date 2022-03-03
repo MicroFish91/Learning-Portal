@@ -3,15 +3,15 @@ export type Dimension = {
   width: string;
 };
 
-export type PageDimensions = {
+export type LayoutDimensions = {
   header: Dimension;
   sidebar: Dimension;
   content: Dimension;
   footer: Dimension;
 };
 
-// Main (Home Page style) Dimensions
-export const MAIN_DIMENSIONS: PageDimensions = {
+// Main Layout Dimensions
+export const MAIN_LAYOUT_DIMENSIONS: LayoutDimensions = {
   header: {
     height: "4rem",
     width: "100%",

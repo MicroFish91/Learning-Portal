@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { MAIN_DIMENSIONS } from "../../../constants";
+import { MAIN_LAYOUT_DIMENSIONS } from "../../../constants";
 
 interface mainSidebarProps {}
 
@@ -23,7 +23,7 @@ const MainSidebar: React.FC<mainSidebarProps> = ({}) => {
 
 export default MainSidebar;
 
-const { header, sidebar } = MAIN_DIMENSIONS;
+const { header, sidebar } = MAIN_LAYOUT_DIMENSIONS;
 
 const Container = styled.div`
   position: fixed;
