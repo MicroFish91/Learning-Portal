@@ -1,14 +1,14 @@
-export interface Dimension {
+export type Dimension = {
   height: string;
   width: string;
-}
+};
 
-export interface PageDimensions {
+export type PageDimensions = {
   header: Dimension;
   sidebar: Dimension;
   content: Dimension;
   footer: Dimension;
-}
+};
 
 // Main (Home Page style) Dimensions
 export const MAIN_DIMENSIONS: PageDimensions = {
