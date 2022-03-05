@@ -29,6 +29,9 @@ const Content = styled.div`
   top: ${header.height};
   left: ${sidebar.width};
 
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+
   height: auto;
   width: calc(100% - ${sidebar.width});
 `;

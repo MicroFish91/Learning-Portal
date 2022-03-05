@@ -1,17 +1,17 @@
 import React from "react";
 import { v4 as uuidv4 } from "uuid";
-import { Container } from "./styles";
+import { GridContainer } from "./styles";
 import Thumbnail from "./Thumbnail";
 import { ThumbnailGridProps } from "./types";
 
 const ThumbnailGrid: React.FC<ThumbnailGridProps> = ({
-  cSize = "10rem",
+  cSize = "15rem",
   rSize,
+  gridGap = 4,
   thumbnailList,
 }) => {
   return (
-    <Container rSize={rSize}>
-      Courses
+    <GridContainer gridGap={gridGap} rSize={rSize}>
       {thumbnailList.map((thumbnail) => {
         return (
           <Thumbnail
@@ -19,10 +19,13 @@ const ThumbnailGrid: React.FC<ThumbnailGridProps> = ({
             cSize={cSize}
             image={thumbnail.image}
             title={thumbnail.title}
+            description={thumbnail.description}
+            author={thumbnail.author}
+            completion={thumbnail.completion}
           />
         );
       })}
-    </Container>
+    </GridContainer>
   );
 };
 

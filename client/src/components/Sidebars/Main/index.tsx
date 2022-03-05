@@ -12,7 +12,7 @@ const MainSidebar: React.FC<mainSidebarProps> = ({}) => {
         <Link to="/">Home</Link>
       </a>
       <a>
-        <Link to="/courses">Courses</Link>
+        <Link to="/my-courses">My Courses</Link>
       </a>
       <a>
         <Link to="">Gradebook</Link>

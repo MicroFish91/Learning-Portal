@@ -1,8 +1,8 @@
 import { Route, Routes } from "react-router-dom";
 import ContentWrapper from "./hoc/contentWrapper";
 import Main from "./layouts/Main";
-import CourseSearch from "./pages/CourseSearch";
 import Home from "./pages/Home";
+import MyCourses from "./pages/MyCourses";
 
 function App() {
   return (
@@ -13,8 +13,8 @@ function App() {
           element={<ContentWrapper Wrapper={Main} Content={Home} />}
         />
         <Route
-          path="/courses"
-          element={<ContentWrapper Wrapper={Main} Content={CourseSearch} />}
+          path="/my-courses"
+          element={<ContentWrapper Wrapper={Main} Content={MyCourses} />}
         />
       </Routes>
     </div>
